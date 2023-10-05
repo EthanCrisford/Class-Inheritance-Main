@@ -4,8 +4,8 @@ public class Enemy : MonoBehaviour
 {
     public int enemyStrength;
 
-    protected virtual void LookAtPlayer()
+    protected virtual void AttackPlayer()
     {
-        print("Enemy is looking at player");
+        print("Enemy is attacking player");
     }
 }

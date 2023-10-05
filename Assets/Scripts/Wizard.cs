@@ -2,17 +2,16 @@ public class Wizard : Enemy
 {
     void Start()
     {
-        enemyStrength = 20;
+        AttackPlayer();
     }
 
     void Update()
     {
-        base.LookAtPlayer();
-        LookAtPlayer();
+
     }
 
-    protected override void LookAtPlayer()
+    protected new void AttackPlayer()
     {
-        print("Wizard is looking at player");
+        print("Wizard is attacking player");
     }
 }

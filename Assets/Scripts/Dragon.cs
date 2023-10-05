@@ -1,18 +1,20 @@
+using Palmmedia.ReportGenerator.Core;
+
 public class Dragon : Enemy
 {
+    
     void Start()
     {
-        enemyStrength = 20;
+        AttackPlayer();
     }
 
     void Update()
     {
-        base.LookAtPlayer();
-        LookAtPlayer();
+
     }
 
-    protected override void LookAtPlayer()
+    protected override void AttackPlayer()
     {
-        print("Dragon is looking at player");
+        print("Dragon is attacking player");
     }
 }

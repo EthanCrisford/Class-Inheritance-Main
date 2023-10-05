@@ -2,17 +2,16 @@ public class Orc : Enemy
 {
     void Start()
     {
-        enemyStrength = 10;
+        AttackPlayer();
     }
 
     void Update()
     {
-        base.LookAtPlayer();
-        LookAtPlayer();
+
     }
 
-    protected override void LookAtPlayer()
+    protected override void AttackPlayer()
     {
-        print("Orc is looking at player");
+        print("Orc is attacking player");
     }
 }
